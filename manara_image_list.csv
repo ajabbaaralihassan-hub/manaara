@@ -1,0 +1,229 @@
+Category,Product Name,Image Filename,Folder
+Breakfast,Beer,beer.jpg,images/breakfast/
+Breakfast,Boorash,boorash.jpg,images/breakfast/
+Breakfast,Boul Egg,boul_egg.jpg,images/breakfast/
+Breakfast,Canjeero,canjeero.jpg,images/breakfast/
+Breakfast,Canjeero Qamadi,canjeero_qamadi.jpg,images/breakfast/
+Breakfast,Canjeero iyo Maraq,canjeero_iyo_maraq.jpg,images/breakfast/
+Breakfast,Faasuliya,faasuliya.jpg,images/breakfast/
+Breakfast,Fresh Tomato Sauce (Dalacbilaash),fresh_tomato_sauce_dalacbilaash.jpg,images/breakfast/
+Breakfast,Fuul,fuul.jpg,images/breakfast/
+Breakfast,Isbeeso Ari,isbeeso_ari.jpg,images/breakfast/
+Breakfast,Killi,killi.jpg,images/breakfast/
+Breakfast,Koosto,koosto.jpg,images/breakfast/
+Breakfast,Malab,malab.jpg,images/breakfast/
+Breakfast,Manaara Breakfast,manaara_breakfast.jpg,images/breakfast/
+Breakfast,Mixed Breakfast (Killi & Beer),mixed_breakfast_killi_and_beer.jpg,images/breakfast/
+Breakfast,Odkac,odkac.jpg,images/breakfast/
+Breakfast,Omlet Egg,omlet_egg.jpg,images/breakfast/
+Breakfast,Rooti,rooti.jpg,images/breakfast/
+Breakfast,Shakshuka Egg,shakshuka_egg.jpg,images/breakfast/
+Breakfast,Suqaar,suqaar.jpg,images/breakfast/
+Sheetar,Bur,bur.jpg,images/sheetar/
+Sheetar,Bur kuuskuus,bur_kuuskuus.jpg,images/sheetar/
+Sheetar,Donat,donat.jpg,images/sheetar/
+Sheetar,Kabaab,kabaab.jpg,images/sheetar/
+Sheetar,Sambuus Fish,sambuus_fish.jpg,images/sheetar/
+Sheetar,Sambuus Meat,sambuus_meat.jpg,images/sheetar/
+Fresh Juices,Avocado,avocado.jpg,images/drinkvip/
+Fresh Juices,Babay,babay.jpg,images/drinkvip/
+Fresh Juices,Babay Mashadoonyo,babay_mashadoonyo.jpg,images/drinkvip/
+Fresh Juices,Baytraaf,baytraaf.jpg,images/drinkvip/
+Fresh Juices,Caana loose,caana_loose.jpg,images/drinkvip/
+Fresh Juices,Cocktail,cocktail.jpg,images/drinkvip/
+Fresh Juices,Feeto qare,feeto_qare.jpg,images/drinkvip/
+Fresh Juices,Furulaato,furulaato.jpg,images/drinkvip/
+Fresh Juices,Garaafo Isbaandhees,garaafo_isbaandhees.jpg,images/drinkvip/
+Fresh Juices,Garaafo Isbarmuuto,garaafo_isbarmuuto.jpg,images/drinkvip/
+Fresh Juices,Garaafo Qare,garaafo_qare.jpg,images/drinkvip/
+Fresh Juices,Garaafo maango,garaafo_maango.jpg,images/drinkvip/
+Fresh Juices,Isbaandhees,isbaandhees.jpg,images/drinkvip/
+Fresh Juices,Isbarmooto,isbarmooto.jpg,images/drinkvip/
+Fresh Juices,Lemon,lemon.jpg,images/drinkvip/
+Fresh Juices,Mango,mango.jpg,images/drinkvip/
+Fresh Juices,Mixed Fruit,mixed_fruit.jpg,images/drinkvip/
+Fresh Juices,Orange,orange.jpg,images/drinkvip/
+Fresh Juices,Watermelon,watermelon.jpg,images/drinkvip/
+Side Dishes,Ceesh - jabaati,ceesh___jabaati.jpg,images/sides/
+Side Dishes,Chips Masala,chips_masala.jpg,images/sides/
+Side Dishes,Daango,daango.jpg,images/sides/
+Side Dishes,Fried Chips,fried_chips.jpg,images/sides/
+Side Dishes,Malawax,malawax.jpg,images/sides/
+Meat,Beef Steak,beef_steak.jpg,images/meat/
+Meat,Beef Steak Mash Potatoes,beef_steak_mash_potatoes.jpg,images/meat/
+Meat,Camel Meat Boiled 0.5kg,camel_meat_boiled_05kg.jpg,images/meat/
+Meat,Camel Meat Boiled 1kg,camel_meat_boiled_1kg.jpg,images/meat/
+Meat,Camel Rose,camel_rose.jpg,images/meat/
+Meat,Chinese Steak,chinese_steak.jpg,images/meat/
+Meat,Cream Beef Steak Mushroom Sause,cream_beef_steak_mushroom_sause.jpg,images/meat/
+Meat,Dhaylo Ari,dhaylo_ari.jpg,images/meat/
+Meat,Ido Alforno,ido_alforno.jpg,images/meat/
+Meat,Koostaato,koostaato.jpg,images/meat/
+Meat,MANARA Meat,manara_meat.jpg,images/meat/
+Meat,MANARA Peef Steak Mashruum,manara_peef_steak_mashruum.jpg,images/meat/
+Meat,Meat Curry,meat_curry.jpg,images/meat/
+Meat,Meat Shuwarma,meat_shuwarma.jpg,images/meat/
+Meat,Moskula,moskula.jpg,images/meat/
+Meat,Mushroom Beef Steak,mushroom_beef_steak.jpg,images/meat/
+Meat,Mushroom Potatoes,mushroom_potatoes.jpg,images/meat/
+Meat,Roasted Goat Meat,roasted_goat_meat.jpg,images/meat/
+Meat,kalaankal,kalaankal.jpg,images/meat/
+Fish,Cocunut Fish,cocunut_fish.jpg,images/fish/
+Fish,Cutulati Fish,cutulati_fish.jpg,images/fish/
+Fish,Finger Fish,finger_fish.jpg,images/fish/
+Fish,Firito Fish,firito_fish.jpg,images/fish/
+Fish,Fish Curry,fish_curry.jpg,images/fish/
+Fish,Fish Shuwarma,fish_shuwarma.jpg,images/fish/
+Fish,Fish Suqaar,fish_suqaar.jpg,images/fish/
+Fish,Grilled Fish,grilled_fish.jpg,images/fish/
+Fish,Masala Fish,masala_fish.jpg,images/fish/
+Fish,Salat Fish,salat_fish.jpg,images/fish/
+Fish,Salmon Fish,salmon_fish.jpg,images/fish/
+Fish,Sandwich,sandwich.jpg,images/fish/
+Fish,Scallop Fish,scallop_fish.jpg,images/fish/
+Fish,Shrimp Curry,shrimp_curry.jpg,images/fish/
+Chicken,Baroosto,baroosto.jpg,images/chicken/
+Chicken,Chicken Chinese,chicken_chinese.jpg,images/chicken/
+Chicken,Chicken Curry,chicken_curry.jpg,images/chicken/
+Chicken,Chicken Cutulati,chicken_cutulati.jpg,images/chicken/
+Chicken,Chicken Finger,chicken_finger.jpg,images/chicken/
+Chicken,Chicken Full,chicken_full.jpg,images/chicken/
+Chicken,Chicken Half,chicken_half.jpg,images/chicken/
+Chicken,Chicken Legs (2 lug),chicken_legs_2_lug.jpg,images/chicken/
+Chicken,Chicken Masala,chicken_masala.jpg,images/chicken/
+Chicken,Chicken Rubac,chicken_rubac.jpg,images/chicken/
+Chicken,Chicken Salad,chicken_salad.jpg,images/chicken/
+Chicken,Chicken Sandwich,chicken_sandwich.jpg,images/chicken/
+Chicken,Chicken Shuwarma,chicken_shuwarma.jpg,images/chicken/
+Chicken,Chicken Steak,chicken_steak.jpg,images/chicken/
+Chicken,Chicken Suqaar,chicken_suqaar.jpg,images/chicken/
+Chicken,Chicken Wings,chicken_wings.jpg,images/chicken/
+Chicken,MANARA Roll Chicken Rice,manara_roll_chicken_rice.jpg,images/chicken/
+Rice,Carrot Rice,carrot_rice.jpg,images/rice/
+Rice,Egg Fry Rice,egg_fry_rice.jpg,images/rice/
+Rice,Fadareeshan,fadareeshan.jpg,images/rice/
+Rice,Green Rice,green_rice.jpg,images/rice/
+Rice,Qamadi Saldato,qamadi_saldato.jpg,images/rice/
+Rice,Rice Saldaato,rice_saldaato.jpg,images/rice/
+Rice,White Rice,white_rice.jpg,images/rice/
+Pasta,Alfareado Chicken,alfareado_chicken.jpg,images/pasta/
+Pasta,Alfredo,alfredo.jpg,images/pasta/
+Pasta,Fino Saldato,fino_saldato.jpg,images/pasta/
+Pasta,Lasagna Pasta,lasagna_pasta.jpg,images/pasta/
+Pasta,MANARA Special Lunch,manara_special_lunch.jpg,images/pasta/
+Pasta,Macaron Alfoorno With Chicken,macaron_alfoorno_with_chicken.jpg,images/pasta/
+Pasta,Pasta,pasta.jpg,images/pasta/
+Pasta,Talteli Saldaato,talteli_saldaato.jpg,images/pasta/
+Burgers,Beef Burger,beef_burger.jpg,images/burger/
+Burgers,Chicken Burger,chicken_burger.jpg,images/burger/
+Burgers,Fish Burger,fish_burger.jpg,images/burger/
+Pizza,Chicken Pizza Large,chicken_pizza_large.jpg,images/pizza/
+Pizza,Chicken Pizza Mediam,chicken_pizza_mediam.jpg,images/pizza/
+Pizza,Chicken Pizza Small,chicken_pizza_small.jpg,images/pizza/
+Pizza,Fish Pizza Large,fish_pizza_large.jpg,images/pizza/
+Pizza,Fish Pizza Mediam,fish_pizza_mediam.jpg,images/pizza/
+Pizza,Fish Pizza Small,fish_pizza_small.jpg,images/pizza/
+Pizza,Magarita Pizza Large,magarita_pizza_large.jpg,images/pizza/
+Pizza,Magarita Pizza Mediam,magarita_pizza_mediam.jpg,images/pizza/
+Pizza,Magarita Pizza Small,magarita_pizza_small.jpg,images/pizza/
+Pizza,Meat Pizza Large,meat_pizza_large.jpg,images/pizza/
+Pizza,Meat Pizza Mediam,meat_pizza_mediam.jpg,images/pizza/
+Pizza,Meat Pizza Small,meat_pizza_small.jpg,images/pizza/
+Restaurant Shakes,Avocado Shake,avocado_shake.jpg,images/shakesvip/
+Restaurant Shakes,Banaana Shake,banaana_shake.jpg,images/shakesvip/
+Restaurant Shakes,Caano Geel,caano_geel.jpg,images/shakesvip/
+Restaurant Shakes,Caano Koosto,caano_koosto.jpg,images/shakesvip/
+Restaurant Shakes,Mango Shake,mango_shake.jpg,images/shakesvip/
+Restaurant Shakes,Milk Shake,milk_shake.jpg,images/shakesvip/
+Soup,Chicken Soup,chicken_soup.jpg,images/soup/
+Soup,Fish Soup,fish_soup.jpg,images/soup/
+Soup,Lender,lender.jpg,images/soup/
+Soup,Soup,soup.jpg,images/soup/
+Soup,Tomato Soup,tomato_soup.jpg,images/soup/
+Salads,Chicken Salad,chicken_salad.jpg,images/salad/
+Salads,Fish Salad,fish_salad.jpg,images/salad/
+Salads,Salad,salad.jpg,images/salad/
+Crepe & Waffle,Bubble Cheese Odkac,bubble_cheese_odkac.jpg,images/crepe/
+Crepe & Waffle,Bubble Honey Cheese,bubble_honey_cheese.jpg,images/crepe/
+Crepe & Waffle,Bubble Honey Odkac,bubble_honey_odkac.jpg,images/crepe/
+Crepe & Waffle,Bubble Lotus,bubble_lotus.jpg,images/crepe/
+Crepe & Waffle,Crepe Dubai,crepe_dubai.jpg,images/crepe/
+Crepe & Waffle,Crepe Dubai Pistachio,crepe_dubai_pistachio.jpg,images/crepe/
+Crepe & Waffle,Crepe Mix,crepe_mix.jpg,images/crepe/
+Crepe & Waffle,Ice Bubble Nutella,ice_bubble_nutella.jpg,images/crepe/
+Crepe & Waffle,Ice Crepe Lotus,ice_crepe_lotus.jpg,images/crepe/
+Crepe & Waffle,Ice Crepe Nutella,ice_crepe_nutella.jpg,images/crepe/
+Crepe & Waffle,Pancake Honey Cheese,pancake_honey_cheese.jpg,images/crepe/
+Crepe & Waffle,Pancake Nutella,pancake_nutella.jpg,images/crepe/
+Dessert & Cake,Banana Cake,banana_cake.jpg,images/cake/
+Dessert & Cake,Basbuuusa,basbuuusa.jpg,images/cake/
+Dessert & Cake,Caramel Cake,caramel_cake.jpg,images/cake/
+Dessert & Cake,Carrot Cake,carrot_cake.jpg,images/cake/
+Dessert & Cake,Chocolate Cake,chocolate_cake.jpg,images/cake/
+Dessert & Cake,Cinnamon Roll,cinnamon_roll.jpg,images/cake/
+Dessert & Cake,Classic Caramel Cake,classic_caramel_cake.jpg,images/cake/
+Dessert & Cake,Cup Cakes,cup_cakes.jpg,images/cake/
+Dessert & Cake,Donut,donut.jpg,images/cake/
+Dessert & Cake,Donuts Cake,donuts_cake.jpg,images/cake/
+Dessert & Cake,Healthy bite,healthy_bite.jpg,images/cake/
+Dessert & Cake,Lebaniyad,lebaniyad.jpg,images/cake/
+Dessert & Cake,Lotus Cake,lotus_cake.jpg,images/cake/
+Dessert & Cake,Oreo Cake,oreo_cake.jpg,images/cake/
+Dessert & Cake,Redvelvet Cake,redvelvet_cake.jpg,images/cake/
+Dessert & Cake,Rice Pudding,rice_pudding.jpg,images/cake/
+Dessert & Cake,Strawberry Cake,strawberry_cake.jpg,images/cake/
+Dessert & Cake,Vanila Cake,vanila_cake.jpg,images/cake/
+Dessert & Cake,White Cake,white_cake.jpg,images/cake/
+Dessert & Cake,ginger cookies,ginger_cookies.jpg,images/cake/
+Dessert Cup,Caramel Cheese Cake,caramel_cheese_cake.jpg,images/dessertcup/
+Dessert Cup,Cheese Cake,cheese_cake.jpg,images/dessertcup/
+Dessert Cup,Lotus Cheese Cake,lotus_cheese_cake.jpg,images/dessertcup/
+Dessert Cup,Oreo Cheese Cake,oreo_cheese_cake.jpg,images/dessertcup/
+Dessert Cup,Strawberry Cheese Cake,strawberry_cheese_cake.jpg,images/dessertcup/
+Dessert Cup,Strawberry Kunafah,strawberry_kunafah.jpg,images/dessertcup/
+Dessert Cup,Tirammiso,tirammiso.jpg,images/dessertcup/
+Hot Coffee,Americano,americano.jpg,images/hotcoffee/
+Hot Coffee,Cappuccino,cappuccino.jpg,images/hotcoffee/
+Hot Coffee,Caramel Latte,caramel_latte.jpg,images/hotcoffee/
+Hot Coffee,Chocolate Latte,chocolate_latte.jpg,images/hotcoffee/
+Hot Coffee,Cinnamon Latte,cinnamon_latte.jpg,images/hotcoffee/
+Hot Coffee,Cookie Latte,cookie_latte.jpg,images/hotcoffee/
+Hot Coffee,Cortado,cortado.jpg,images/hotcoffee/
+Hot Coffee,Double Espresso,double_espresso.jpg,images/hotcoffee/
+Hot Coffee,Espresso,espresso.jpg,images/hotcoffee/
+Hot Coffee,Flat White,flat_white.jpg,images/hotcoffee/
+Hot Coffee,Hazelnut Latte,hazelnut_latte.jpg,images/hotcoffee/
+Hot Coffee,Latte,latte.jpg,images/hotcoffee/
+Hot Coffee,Macchiato,macchiato.jpg,images/hotcoffee/
+Hot Coffee,Mocha Latte,mocha_latte.jpg,images/hotcoffee/
+Hot Coffee,Single Espresso,single_espresso.jpg,images/hotcoffee/
+Hot Coffee,Spanish Latte,spanish_latte.jpg,images/hotcoffee/
+Hot Coffee,Turkish Coffee,turkish_coffee.jpg,images/hotcoffee/
+Hot Coffee,V60,v60.jpg,images/hotcoffee/
+Tea & More,Chai Latte,chai_latte.jpg,images/tea/
+Tea & More,Ginger Lemon,ginger_lemon.jpg,images/tea/
+Tea & More,Green Tea,green_tea.jpg,images/tea/
+Tea & More,Matcha Latte,matcha_latte.jpg,images/tea/
+Tea & More,Mint Tea,mint_tea.jpg,images/tea/
+Tea & More,Moroccan Tea,moroccan_tea.jpg,images/tea/
+Tea & More,Passion Tea,passion_tea.jpg,images/tea/
+Tea & More,Peppermint Tea,peppermint_tea.jpg,images/tea/
+Tea & More,White Tea,white_tea.jpg,images/tea/
+Ice Tea,Ice Tea Raspberry,ice_tea_raspberry.jpg,images/icetea/
+Ice Tea,Lemon Ice Tea,lemon_ice_tea.jpg,images/icetea/
+Ice Tea,Passion Ice Tea,passion_ice_tea.jpg,images/icetea/
+Ice Tea,Sweet Honey Ice Tea,sweet_honey_ice_tea.jpg,images/icetea/
+Cold Drinks,Iced Americano,iced_americano.jpg,images/colddrink/
+Cold Drinks,Iced Carmel Latte,iced_carmel_latte.jpg,images/colddrink/
+Cold Drinks,Iced Chocolate Latte,iced_chocolate_latte.jpg,images/colddrink/
+Cold Drinks,Iced Cinnamon Latte,iced_cinnamon_latte.jpg,images/colddrink/
+Cold Drinks,Iced Cookie Latte,iced_cookie_latte.jpg,images/colddrink/
+Cold Drinks,Iced Hazelnut Latte,iced_hazelnut_latte.jpg,images/colddrink/
+Cold Drinks,Iced Latte,iced_latte.jpg,images/colddrink/
+Cold Drinks,Iced Matcha Latte,iced_matcha_latte.jpg,images/colddrink/
+Cold Drinks,Iced Mocha Latte,iced_mocha_latte.jpg,images/colddrink/
+Cold Drinks,Iced Shaken Caramel,iced_shaken_caramel.jpg,images/colddrink/
+Cold Drinks,Iced Shaken Cookie,iced_shaken_cookie.jpg,images/colddrink/
+Cold Drinks,Iced Shaken Mocha,iced_shaken_mocha.jpg,images/colddrink/
+Cold Drinks,Iced Shaken Spanish,iced_shaken_spanish.jpg,images/colddrink/
+Cold Drinks,Iced Spanish Latte,iced_spanish_latte.jpg,images/colddrink/

@@ -1,0 +1,1276 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Manaara VIP Restaurant & Café</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,600;0,700;1,300;1,400&family=Jost:wght@300;400;500;600&display=swap" rel="stylesheet">
+<style>
+  :root {
+    --forest: #45502D;
+    --gold: #AA7F3F;
+    --forest-dark: #2f3820;
+    --forest-light: #5a6b3a;
+    --gold-light: #c9a05c;
+    --gold-pale: #e8d4a8;
+    --cream: #faf6ee;
+    --warm-white: #fdfbf7;
+    --text-dark: #1a1a14;
+    --text-mid: #4a4a3a;
+    --text-light: #8a8a72;
+    --card-bg: #ffffff;
+    --border: rgba(170,127,63,0.2);
+    --shadow: 0 4px 24px rgba(69,80,45,0.10);
+    --shadow-lg: 0 12px 48px rgba(69,80,45,0.18);
+  }
+
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+
+  html { scroll-behavior: smooth; }
+
+  body {
+    font-family: 'Jost', sans-serif;
+    background: var(--warm-white);
+    color: var(--text-dark);
+    overflow-x: hidden;
+  }
+
+  /* ─── TOP BAR ─── */
+  .topbar {
+    background: var(--forest-dark);
+    color: var(--gold-pale);
+    text-align: center;
+    padding: 9px 20px;
+    font-size: 13px;
+    font-weight: 400;
+    letter-spacing: 0.04em;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 32px;
+    flex-wrap: wrap;
+  }
+  .topbar a { color: var(--gold-light); text-decoration: none; }
+  .topbar span { display: flex; align-items: center; gap: 7px; }
+
+  /* ─── NAVBAR ─── */
+  nav {
+    background: var(--forest);
+    position: sticky;
+    top: 0;
+    z-index: 100;
+    box-shadow: 0 2px 20px rgba(0,0,0,0.25);
+  }
+  .nav-inner {
+    max-width: 1300px;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 28px;
+    height: 68px;
+  }
+  .logo-area {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    text-decoration: none;
+  }
+  .logo-placeholder {
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    overflow: hidden;
+}
+
+.logo-placeholder img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+  .nav-links {
+    display: flex;
+    align-items: center;
+    gap: 4px;
+    list-style: none;
+  }
+  .nav-links a {
+    color: var(--cream);
+    text-decoration: none;
+    font-size: 13.5px;
+    font-weight: 400;
+    padding: 8px 14px;
+    border-radius: 4px;
+    transition: background 0.2s, color 0.2s;
+    letter-spacing: 0.04em;
+  }
+  .nav-links a:hover { background: rgba(170,127,63,0.2); color: var(--gold-light); }
+
+  .nav-search-btn {
+    background: var(--gold);
+    border: none;
+    color: var(--forest-dark);
+    font-family: 'Jost', sans-serif;
+    font-size: 13px;
+    font-weight: 600;
+    padding: 9px 20px;
+    border-radius: 4px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    gap: 7px;
+    transition: background 0.2s, transform 0.15s;
+    letter-spacing: 0.04em;
+    margin-left: 10px;
+  }
+  .nav-search-btn:hover { background: var(--gold-light); transform: translateY(-1px); }
+
+  .hamburger {
+    display: none;
+    flex-direction: column;
+    gap: 5px;
+    background: none;
+    border: none;
+    cursor: pointer;
+    padding: 6px;
+  }
+  .hamburger span {
+    display: block;
+    width: 24px; height: 2px;
+    background: var(--cream);
+    border-radius: 2px;
+    transition: 0.3s;
+  }
+
+  /* ─── HERO ─── */
+  .hero {
+    background: linear-gradient(135deg, var(--forest-dark) 0%, var(--forest) 50%, var(--forest-light) 100%);
+    min-height: 480px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 80px 24px;
+    position: relative;
+    overflow: hidden;
+  }
+  .hero::before {
+    content: '';
+    position: absolute; inset: 0;
+    background: url("data:image/svg+xml,%3Csvg width='60' height='60' viewBox='0 0 60 60' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='none' fill-rule='evenodd'%3E%3Cg fill='%23AA7F3F' fill-opacity='0.07'%3E%3Cpath d='M36 34v-4h-2v4h-4v2h4v4h2v-4h4v-2h-4zm0-30V0h-2v4h-4v2h4v4h2V6h4V4h-4zM6 34v-4H4v4H0v2h4v4h2v-4h4v-2H6zM6 4V0H4v4H0v2h4v4h2V6h4V4H6z'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E");
+    opacity: 0.6;
+  }
+  .hero-content { position: relative; z-index: 1; max-width: 700px; }
+  .hero-badge {
+    display: inline-block;
+    background: rgba(170,127,63,0.2);
+    border: 1px solid rgba(170,127,63,0.5);
+    color: var(--gold-light);
+    font-size: 12px;
+    font-weight: 500;
+    letter-spacing: 0.2em;
+    text-transform: uppercase;
+    padding: 6px 18px;
+    border-radius: 100px;
+    margin-bottom: 22px;
+  }
+  .hero h1 {
+    font-family: 'Cormorant Garamond', serif;
+    font-size: clamp(38px, 7vw, 68px);
+    font-weight: 300;
+    color: var(--cream);
+    line-height: 1.1;
+    margin-bottom: 16px;
+    letter-spacing: 0.02em;
+  }
+  .hero h1 em { font-style: italic; color: var(--gold-light); }
+  .hero p {
+    color: rgba(250,246,238,0.75);
+    font-size: 16px;
+    font-weight: 300;
+    letter-spacing: 0.06em;
+    margin-bottom: 36px;
+  }
+  .hero-divider {
+    width: 80px; height: 1px;
+    background: linear-gradient(90deg, transparent, var(--gold), transparent);
+    margin: 0 auto 36px;
+  }
+  .hero-btns { display: flex; gap: 14px; justify-content: center; flex-wrap: wrap; }
+  .btn-primary {
+    background: var(--gold);
+    color: var(--forest-dark);
+    border: none;
+    font-family: 'Jost', sans-serif;
+    font-size: 14px;
+    font-weight: 600;
+    padding: 13px 32px;
+    border-radius: 4px;
+    cursor: pointer;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+    transition: background 0.2s, transform 0.15s;
+    text-decoration: none;
+  }
+  .btn-primary:hover { background: var(--gold-light); transform: translateY(-2px); }
+  .btn-outline {
+    background: transparent;
+    color: var(--cream);
+    border: 1px solid rgba(250,246,238,0.4);
+    font-family: 'Jost', sans-serif;
+    font-size: 14px;
+    font-weight: 400;
+    padding: 13px 32px;
+    border-radius: 4px;
+    cursor: pointer;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+    transition: border-color 0.2s, background 0.2s;
+    text-decoration: none;
+  }
+  .btn-outline:hover { border-color: var(--gold); background: rgba(170,127,63,0.1); }
+
+  /* ─── SEARCH SECTION ─── */
+  .search-section {
+    background: var(--cream);
+    border-bottom: 1px solid var(--border);
+    padding: 28px 24px;
+    position: sticky;
+    top: 68px;
+    z-index: 80;
+    box-shadow: 0 2px 12px rgba(69,80,45,0.06);
+  }
+  .search-inner {
+    max-width: 1300px;
+    margin: 0 auto;
+    display: flex;
+    gap: 14px;
+    align-items: center;
+    flex-wrap: wrap;
+  }
+  .search-box {
+    flex: 1;
+    min-width: 260px;
+    position: relative;
+  }
+  .search-box input {
+    width: 100%;
+    padding: 13px 20px 13px 48px;
+    border: 1.5px solid var(--border);
+    border-radius: 6px;
+    font-family: 'Jost', sans-serif;
+    font-size: 14.5px;
+    color: var(--text-dark);
+    background: white;
+    outline: none;
+    transition: border-color 0.2s, box-shadow 0.2s;
+  }
+  .search-box input:focus { border-color: var(--gold); box-shadow: 0 0 0 3px rgba(170,127,63,0.12); }
+  .search-box input::placeholder { color: var(--text-light); }
+  .search-icon {
+    position: absolute;
+    left: 16px; top: 50%;
+    transform: translateY(-50%);
+    color: var(--text-light);
+    font-size: 17px;
+    pointer-events: none;
+  }
+  .filter-chips {
+    display: flex;
+    gap: 8px;
+    flex-wrap: wrap;
+    align-items: center;
+  }
+  .chip {
+    background: white;
+    border: 1.5px solid var(--border);
+    color: var(--text-mid);
+    font-family: 'Jost', sans-serif;
+    font-size: 12.5px;
+    font-weight: 500;
+    padding: 7px 15px;
+    border-radius: 100px;
+    cursor: pointer;
+    transition: all 0.2s;
+    white-space: nowrap;
+  }
+  .chip:hover, .chip.active {
+    background: var(--forest);
+    border-color: var(--forest);
+    color: var(--cream);
+  }
+  #search-count {
+    color: var(--text-light);
+    font-size: 13px;
+    white-space: nowrap;
+  }
+
+  /* ─── MAIN CONTENT ─── */
+  .main-content {
+    max-width: 1300px;
+    margin: 0 auto;
+    padding: 48px 24px 80px;
+  }
+
+  /* ─── CATEGORY NAV ─── */
+  .cat-nav {
+    margin-bottom: 40px;
+    overflow-x: auto;
+    scrollbar-width: none;
+    -ms-overflow-style: none;
+  }
+  .cat-nav::-webkit-scrollbar { display: none; }
+  .cat-nav-inner {
+    display: flex;
+    gap: 8px;
+    padding: 4px 0;
+    min-width: max-content;
+  }
+  .cat-pill {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    padding: 10px 18px;
+    background: white;
+    border: 1.5px solid var(--border);
+    border-radius: 100px;
+    text-decoration: none;
+    color: var(--text-mid);
+    font-size: 13px;
+    font-weight: 500;
+    white-space: nowrap;
+    transition: all 0.2s;
+    cursor: pointer;
+  }
+  .cat-pill:hover {
+    border-color: var(--gold);
+    color: var(--gold);
+    box-shadow: 0 2px 12px rgba(170,127,63,0.15);
+  }
+  .cat-pill .icon { font-size: 16px; }
+
+  /* ─── SECTION ─── */
+  .menu-section {
+    margin-bottom: 56px;
+    scroll-margin-top: 180px;
+  }
+  .section-header {
+    display: flex;
+    align-items: center;
+    gap: 18px;
+    margin-bottom: 28px;
+    padding-bottom: 18px;
+    border-bottom: 1px solid var(--border);
+  }
+  .section-icon {
+    width: 48px; height: 48px;
+    background: linear-gradient(135deg, var(--forest), var(--forest-light));
+    border-radius: 12px;
+    display: flex; align-items: center; justify-content: center;
+    font-size: 22px;
+    flex-shrink: 0;
+    box-shadow: 0 4px 12px rgba(69,80,45,0.25);
+  }
+  .section-title-wrap { flex: 1; }
+  .section-title {
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 26px;
+    font-weight: 600;
+    color: var(--forest-dark);
+    letter-spacing: 0.02em;
+    line-height: 1.1;
+  }
+  .section-count {
+    font-size: 12.5px;
+    color: var(--text-light);
+    font-weight: 400;
+    margin-top: 2px;
+    letter-spacing: 0.04em;
+  }
+  .section-line {
+    flex: 1;
+    height: 1px;
+    background: linear-gradient(90deg, var(--gold), transparent);
+    opacity: 0.4;
+  }
+
+  /* ─── PRODUCT GRID ─── */
+  .product-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+    gap: 20px;
+  }
+
+  .product-card {
+    background: white;
+    border: 1px solid var(--border);
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: var(--shadow);
+    transition: transform 0.25s, box-shadow 0.25s, border-color 0.25s;
+    display: flex;
+    flex-direction: column;
+  }
+  .product-card:hover {
+    transform: translateY(-4px);
+    box-shadow: var(--shadow-lg);
+    border-color: rgba(170,127,63,0.4);
+  }
+
+  .product-img {
+    width: 100%;
+    aspect-ratio: 4/3;
+    background: linear-gradient(135deg, #f0ede5 0%, #e8e2d4 100%);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    color: var(--text-light);
+    font-size: 11px;
+    font-weight: 400;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+    gap: 10px;
+    position: relative;
+    overflow: hidden;
+    border-bottom: 1px solid var(--border);
+  }
+  .product-img img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    position: absolute;
+    inset: 0;
+    transition: transform 0.4s ease;
+  }
+  .product-card:hover .product-img img {
+    transform: scale(1.06);
+  }
+  .product-img::before {
+    content: '';
+    position: absolute; inset: 0;
+    background: url("data:image/svg+xml,%3Csvg width='40' height='40' viewBox='0 0 40 40' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='%23AA7F3F' fill-opacity='0.06'%3E%3Cpath d='M20 20.5V18H0v5h5v5H0v5h20v-2.5c3-.5 4-2 4-6.5-.5-2.5-3-3-4-3.5zM15 45v-2.5h5V20H15v2.5H0V45h15z'/%3E%3C/g%3E%3C/svg%3E");
+  }
+  .img-placeholder {
+    font-size: 40px;
+    opacity: 0.4;
+    position: relative;
+    z-index: 1;
+  }
+  .product-img.no-img .img-placeholder { display: flex; }
+  .product-img:not(.no-img) .img-placeholder { display: none; }
+
+  .product-body {
+    padding: 16px 18px 18px;
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 12px;
+  }
+  .product-name {
+    font-family: 'Jost', sans-serif;
+    font-size: 14.5px;
+    font-weight: 500;
+    color: var(--text-dark);
+    line-height: 1.4;
+  }
+  .product-footer {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  .product-price {
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 20px;
+    font-weight: 700;
+    color: var(--forest);
+  }
+  .product-price span {
+    font-size: 12px;
+    font-family: 'Jost', sans-serif;
+    font-weight: 400;
+    color: var(--text-light);
+  }
+  .add-btn{
+  text-decoration:none;
+  width:32px;
+  height:32px;
+  background:var(--forest);
+  border:none;
+  border-radius:50%;
+  color:white;
+  font-size:20px;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  line-height:1;
+}
+
+  /* ─── NO RESULTS ─── */
+  .no-results {
+    text-align: center;
+    padding: 60px 20px;
+    color: var(--text-light);
+    display: none;
+  }
+  .no-results.show { display: block; }
+  .no-results-icon { font-size: 48px; margin-bottom: 16px; opacity: 0.5; }
+  .no-results h3 { font-family: 'Cormorant Garamond', serif; font-size: 22px; margin-bottom: 8px; }
+
+  /* ─── FOOTER ─── */
+  footer {
+    background: var(--forest-dark);
+    color: rgba(250,246,238,0.75);
+    padding: 56px 24px 32px;
+  }
+  .footer-inner {
+    max-width: 1300px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 2fr 1fr 1fr;
+    gap: 48px;
+    margin-bottom: 40px;
+  }
+  .footer-brand .logo-text { color: var(--cream); margin-bottom: 14px; display: block; }
+  .footer-brand p { font-size: 14px; line-height: 1.7; color: rgba(250,246,238,0.6); max-width: 280px; }
+  .footer-col h4 {
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 16px;
+    font-weight: 600;
+    color: var(--gold-light);
+    margin-bottom: 16px;
+    letter-spacing: 0.06em;
+  }
+  .footer-col p, .footer-col a {
+    font-size: 14px;
+    color: rgba(250,246,238,0.65);
+    text-decoration: none;
+    display: block;
+    margin-bottom: 8px;
+    line-height: 1.6;
+    transition: color 0.2s;
+  }
+  .footer-col a:hover { color: var(--gold-light); }
+  .footer-bottom {
+    max-width: 1300px;
+    margin: 0 auto;
+    padding-top: 24px;
+    border-top: 1px solid rgba(170,127,63,0.2);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 12.5px;
+    color: rgba(250,246,238,0.35);
+    flex-wrap: wrap;
+    gap: 12px;
+  }
+  .footer-gold { color: var(--gold-light); }
+
+  /* ─── MOBILE NAV ─── */
+  .mobile-nav {
+    display: none;
+    flex-direction: column;
+    background: var(--forest-dark);
+    padding: 16px 20px 20px;
+    gap: 6px;
+  }
+  .mobile-nav a {
+    color: var(--cream);
+    text-decoration: none;
+    font-size: 15px;
+    padding: 10px 14px;
+    border-radius: 6px;
+    transition: background 0.2s;
+  }
+  .mobile-nav a:hover { background: rgba(170,127,63,0.15); }
+
+  /* ─── RESPONSIVE ─── */
+  @media (max-width: 900px) {
+    .nav-links, .nav-search-btn { display: none; }
+    .hamburger { display: flex; }
+    .footer-inner { grid-template-columns: 1fr 1fr; }
+    .footer-brand { grid-column: 1 / -1; }
+    .product-grid { grid-template-columns: repeat(auto-fill, minmax(180px, 1fr)); }
+  }
+  @media (max-width: 600px) {
+    .topbar { font-size: 12px; gap: 16px; }
+    .hero { min-height: 360px; padding: 60px 20px; }
+    .product-grid { grid-template-columns: repeat(2, 1fr); gap: 14px; }
+    .footer-inner { grid-template-columns: 1fr; gap: 28px; }
+    .footer-brand { grid-column: auto; }
+    .search-section { top: 60px; }
+    .nav-inner { height: 60px; padding: 0 18px; }
+  }
+
+  /* ─── HIDDEN ─── */
+  .hidden { display: none !important; }
+
+  /* ─── ANIMATIONS ─── */
+  @keyframes fadeUp {
+    from { opacity: 0; transform: translateY(20px); }
+    to { opacity: 1; transform: translateY(0); }
+  }
+  .menu-section { animation: fadeUp 0.4s ease both; }
+</style>
+</head>
+<body>
+
+<!-- TOP BAR -->
+<div class="topbar">
+  <span>📍 Hodan District, Banaadir, Mogadishu, Somalia</span>
+  <span>📞 <a href="tel:+252613599469">+252 613 599 469</a></span>
+  <span>🕐 Open Daily</span>
+</div>
+
+<!-- NAVBAR -->
+<nav id="navbar">
+  <div class="nav-inner">
+    <a href="#" class="logo-area">
+      <div class="logo-placeholder"> <img src="manara logo.png"> <alt="manara logo"> </div>
+    </a>
+    <ul class="nav-links">
+      <li><a href="#menu">Menu</a></li>
+      <li><a href="#beverages">Beverages</a></li>
+      <li><a href="#food">Food</a></li>
+      <li><a href="#desserts">Desserts</a></li>
+      <li><a href="#footer">Contact</a></li>
+    </ul>
+    <button class="nav-search-btn" onclick="focusSearch()">
+      🔍 Search Menu
+    </button>
+    <button class="hamburger" id="hamburgerBtn" onclick="toggleMobileNav()">
+      <span></span><span></span><span></span>
+    </button>
+  </div>
+  <div class="mobile-nav" id="mobileNav">
+    <a href="#menu" onclick="toggleMobileNav()">Menu</a>
+    <a href="#beverages" onclick="toggleMobileNav()">Beverages</a>
+    <a href="#food" onclick="toggleMobileNav()">Food</a>
+    <a href="#desserts" onclick="toggleMobileNav()">Desserts</a>
+    <a href="#footer" onclick="toggleMobileNav()">Contact</a>
+  </div>
+</nav>
+
+<!-- HERO -->
+<section class="hero">
+  <div class="hero-content">
+    <div class="hero-badge">✦ VIP Experience ✦</div>
+    <h1>Martigelin<br>heer <em>sare ah</em></h1>
+    <div class="hero-divider"></div>
+    <p>Mogadishu's Premier Restaurant & Café · Hodan District</p>
+    <div class="hero-btns">
+      <a href="#menu" class="btn-primary">Explore Menu</a>
+      <a href="tel:+252613599469" class="btn-outline">📞 Reserve a Table</a>
+    </div>
+  </div>
+</section>
+
+<!-- SEARCH -->
+<div class="search-section" id="menu">
+  <div class="search-inner">
+    <div class="search-box">
+      <span class="search-icon">🔍</span>
+      <input type="text" id="searchInput" placeholder="Search any dish, drink or category…" oninput="doSearch()">
+    </div>
+    <div class="filter-chips" id="filterChips">
+      <button class="chip active" onclick="filterGroup(this, 'all')">All</button>
+      <button class="chip" onclick="filterGroup(this, 'beverages')">☕ Beverages</button>
+      <button class="chip" onclick="filterGroup(this, 'food')">🍽️ Food</button>
+      <button class="chip" onclick="filterGroup(this, 'desserts')">🍰 Desserts</button>
+    </div>
+    <span id="search-count"></span>
+  </div>
+</div>
+
+<!-- MAIN -->
+<main class="main-content">
+
+  <!-- Category quick-nav pills -->
+  <div class="cat-nav">
+    <div class="cat-nav-inner" id="catNav"></div>
+  </div>
+
+  <div id="menuSections"></div>
+  <div class="no-results" id="noResults">
+    <div class="no-results-icon">🍽️</div>
+    <h3>No items found</h3>
+    <p>Try a different search term or browse all categories.</p>
+  </div>
+</main>
+
+<!-- FOOTER -->
+<footer id="footer">
+  <div class="footer-inner">
+    <div class="footer-brand">
+      <span class="logo-text">Manaara VIP Restaurant</span>
+      <p>A premium dining destination in the heart of Mogadishu, offering an exceptional blend of Somali flavors and international cuisine in an elegant atmosphere.</p>
+    </div>
+    <div class="footer-col">
+      <h4>Contact Us</h4>
+      <a href="tel:+252613599469">📞 +252 613 599 469</a>
+      <p>📍 Hodan District<br>Banaadir, Mogadishu<br>Somalia</p>
+    </div>
+    <div class="footer-col">
+      <h4>Quick Links</h4>
+      <a href="#menu">Full Menu</a>
+      <a href="#beverages">Beverages</a>
+      <a href="#food">Food</a>
+      <a href="#desserts">Desserts</a>
+      <a href="tel:+252613599469">Reservations</a>
+    </div>
+  </div>
+  <div class="footer-bottom">
+    <span>© 2025 <span class="footer-gold">Manaara VIP Restaurant</span>. All rights reserved.</span>
+    <span>Hodan District · Mogadishu · Somalia</span>
+  </div>
+</footer>
+C:\Users\Pcs\Desktop\manara\images\Soda\coca_cola_300ml.jpeg
+<script>
+const menuData = [
+  {
+    id: "soda", label: "Soda", icon: "🥤", group: "beverages",
+    products: [
+      {name:"Coca-Cola 300ML",price:0.5,img:"images/Soda/coca_cola_300ml.jpeg"},
+      {name:"Coca-Cola 500ML",price:0.7,img:"images/Soda/coca_cola_500ml.jpeg"},
+      {name:"Desani 300Ml",price:0.3,img:"images/soda/desani_300ml.jpeg"},
+      {name:"Desani 500Ml",price:0.5,img:"images/soda/desani_500ml.jpeg"},
+      {name:"Faanta 300ML",price:0.5,img:"images/soda/faanta_300ml.jpeg"},
+      {name:"Faanta 500ML",price:0.7,img:"images/soda/faanta_500ml.jpeg"},
+      {name:"Orange 300ML",price:0.5,img:"images/soda/orange_300ml.jpeg"},
+      {name:"Orange 500ML",price:0.7,img:"images/soda/orange_500ml.jpeg"},
+      {name:"Pepsi",price:0.5,img:"images/soda/pepsi.jpeg"},
+      {name:"Sprite 300ml",price:0.5,img:"images/soda/sprite_300ml.jpeg"},
+    ]
+  },
+  {
+    id: "smoothies", label: "Smoothies", icon: "🍓", group: "beverages",
+    products: [
+      {name:"Blueberry Smoothie",price:2.5,img:"images/smoothies/blueberry_smoothie.jpeg"},
+      {name:"Cherry Smoothie",price:2.5,img:"images/smoothies/cherry_smoothie.jpeg"},
+      {name:"Green Apple Smoothie",price:2.5,img:"images/smoothies/green_apple_smoothie.jpeg"},
+      {name:"Jabuticaba Smoothie",price:2.5,img:"images/smoothies/jabuticaba_smoothie.jpeg"},
+      {name:"Kiwi Smoothie",price:2.5,img:"images/smoothies/kiwi_smoothie.jpeg"},
+      {name:"Mango Smoothie",price:2.5,img:"images/smoothies/mango_smoothie.jpeg"},
+      {name:"Passion Fruit Smoothie",price:2.5,img:"images/smoothies/passion_fruit_smoothie.jpeg"},
+      {name:"Peach Smoothie",price:2.5,img:"images/smoothies/peach_smoothie.jpeg"},
+      {name:"Pineapple Smoothie",price:2.5,img:"images/smoothies/pineapple_smoothie.jpeg"},
+      {name:"Stawberry Smoothie",price:2.5,img:"images/smoothies/stawberry_smoothie.jpeg"},
+    ]
+  },
+  {
+    id: "shake", label: "Shakes", icon: "🥛", group: "beverages",
+    products: [
+      {name:"Chocolate Shake",price:2.5,img:"images/shake/chocolate_shake.jpeg"},
+      {name:"Lotus Shake",price:3.0,img:"images/shake/lotus_shake.jpeg"},
+      {name:"Oreo Shake",price:3.0,img:"images/shake/oreo_shake.jpeg"},
+      {name:"Strawbery Shake",price:2.5,img:"images/shake/strawbery_shake.jpeg"},
+      {name:"Vanilla Shake",price:2.5,img:"images/shake/vanilla_shake.jpeg"},
+    ]
+  },
+  {
+    id: "mojito", label: "Mojito Drinks", icon: "🍹", group: "beverages",
+    products: [
+      {name:"Blueberry Mojito",price:2.5,img:"images/mojito/blueberry_mojito.jpeg"},
+      {name:"Cherry Mojito",price:2.5,img:"images/mojito/cherry_mojito.jpeg"},
+      {name:"Green Apple Mojito",price:2.5,img:"images/mojito/green_apple_mojito.jpeg"},
+      {name:"Jabuticabea Mojito",price:2.5,img:"images/mojito/jabuticabea_mojito.jpeg"},
+      {name:"Kiwi Mojito",price:2.5,img:"images/mojito/kiwi_mojito.jpeg"},
+      {name:"Mango Mojito",price:2.5,img:"images/mojito/mango_mojito.jpeg"},
+      {name:"Passion Fruit Mojito",price:2.5,img:"images/mojito/passion_fruit_mojito.jpeg"},
+      {name:"Peach Mojito",price:2.5,img:"images/mojito/peach_mojito.jpeg"},
+      {name:"Strawbery mojito",price:2.5,img:"images/mojito/strawbery_mojito.jpeg"},
+      {name:"Virgin Mojito",price:2.5,img:"images/mojito/virgin_mojito.jpeg"},
+    ]
+  },
+  {
+    id: "tea", label: "Tea", icon: "🍵", group: "beverages",
+    products: [
+      {name:"Dawo Tea",price:1.5,img:"images/tea/dawo_tea.jpeg"},
+      {name:"English Tea",price:1.0,img:"images/tea/english_tea.jpeg"},
+      {name:"Lipton Caana Geel",price:1.5,img:"images/tea/lipton_caana_geel.jpeg"},
+      {name:"Lipton Caana boore",price:1.0,img:"images/tea/lipton_caana_boore.jpeg"},
+      {name:"Masala Tea",price:1.5,img:"images/tea/masala_tea.jpeg"},
+      {name:"Mint Tea",price:1.5,img:"images/tea/mint_tea.jpeg"},
+      {name:"Shaah Caana geel",price:1.5,img:"images/tea/shaah_caana_geel.jpeg"},
+      {name:"Shaah caana boore",price:1.0,img:"images/tea/shaah_caana_boore.jpeg"},
+    ]
+  },
+  {
+    id: "hotcoffee", label: "Hot Coffee", icon: "☕", group: "beverages",
+    products: [
+      {name:"Amerericano",price:1.5,img:"images/hotcoffee/amerericano.jpeg"},
+      {name:"Caffe Latte",price:2.0,img:"images/hotcoffee/caffe_latte.jpeg"},
+      {name:"Cappuccino",price:2.0,img:"images/hotcoffee/cappuccino.jpeg"},
+      {name:"Caremel Latte",price:2.25,img:"images/hotcoffee/caremel_latte.jpeg"},
+      {name:"Espresso",price:1.5,img:"images/hotcoffee/espresso.jpeg"},
+      {name:"Espresso Affogato",price:2.5,img:"images/hotcoffee/espresso_affogato.jpeg"},
+      {name:"Expresso Macchiato",price:1.5,img:"images/hotcoffee/expresso_macchiato.jpeg"},
+      {name:"Hazelant Latte",price:2.25,img:"images/hotcoffee/hazelant_latte.jpeg"},
+      {name:"Hot Chocolate",price:2.0,img:"images/hotcoffee/hot_chocolate.jpeg"},
+      {name:"Matcha latte",price:2.5,img:"images/hotcoffee/matcha_latte.jpeg"},
+      {name:"Milk",price:0.5,img:"images/hotcoffee/milk.jpg"},
+      {name:"Mocha Latte",price:2.5,img:"images/hotcoffee/mocha_latte.jpg"},
+      {name:"Qaxwo Somali",price:1.0,img:"images/hotcoffee/qaxwo_somali.jpg"},
+      {name:"Qaxwo Somali Milk",price:1.5,img:"images/hotcoffee/qaxwo_somali_milk.jpeg"},
+      {name:"Spanish Latte",price:2.5,img:"images/hotcoffee/spanish_latte.jpeg"},
+      {name:"Vanilla Latte",price:2.25,img:"images/hotcoffee/vanilla_latte.jpg"},
+      {name:"White Mocha Latte",price:2.0,img:"images/hotcoffee/white_mocha_latte.jpeg"},
+    ]
+  },
+  {
+    id: "frappuccino", label: "Frappuccino", icon: "🧋", group: "beverages",
+    products: [
+      {name:"Caramel Frappe",price:3.0,img:"images/frappuccino/caramel_frappe.jpeg"},
+      {name:"Chocolate Frape",price:3.0,img:"images/frappuccino/chocolate_frape.jpeg"},
+      {name:"Cinnamon Frape",price:3.0,img:"images/frappuccino/cinnamon_frape.jpeg"},
+      {name:"Lotus Frape",price:3.0,img:"images/frappuccino/lotus_frape.jpg"},
+      {name:"Strawberry Frappe",price:3.0,img:"images/frappuccino/strawberry_frappe.jpeg"},
+      {name:"Vanilla Frape",price:3.0,img:"images/frappuccino/vanilla_frape.jpeg"},
+      {name:"White Mocha Frappe",price:3.0,img:"images/frappuccino/white_mocha_frappe.jpeg"},
+    ]
+  },
+  {
+    id: "icetea", label: "Ice Tea & Cold", icon: "🧊", group: "beverages",
+    products: [
+      {name:"Ice Coffee",price:2.0,img:"images/icetea/ice_coffee.jpeg"},
+      {name:"Ice Tea Peach",price:2.0,img:"images/icetea/ice_tea_peach.jpeg"},
+      {name:"Ice Tea Raspberry",price:2.0,img:"images/icetea/ice_tea_raspberry.jpeg"},
+      {name:"Lemon Ice Tea",price:2.0,img:"images/icetea/lemon_ice_tea.jpeg"},
+      {name:"Passion Ice Tea",price:2.0,img:"images/icetea/passion_ice_tea.jpeg"},
+      {name:"Sweet Honey Ice Tea",price:2.0,img:"images/icetea/sweet_honey_ice_tea.jpeg"},
+    ]
+  },
+  {
+    id: "colddrink", label: "Cold Drinks", icon: "🥤", group: "beverages",
+    products: [
+      {name:"Iced Americano",price:2.0,img:"images/colddrink/iced_americano.jpeg"},
+      {name:"Iced Carmel Latte",price:2.5,img:"images/colddrink/iced_carmel_latte.jpeg"},
+      {name:"Iced Chocolate Latte",price:2.5,img:"images/colddrink/iced_chocolate_latte.jpeg"},
+      {name:"Iced Cinnamon Latte",price:2.5,img:"images/colddrink/iced_cinnamon_latte.jpeg"},
+      {name:"Iced Cookie Latte",price:2.5,img:"images/colddrink/iced_cookie_latte.jpeg"},
+      {name:"Iced Hazelnut Latte",price:2.5,img:"images/colddrink/iced_hazelnut_latte.jpeg"},
+      {name:"Iced Latte",price:2.0,img:"images/colddrink/iced_latte.jpeg"},
+      {name:"Iced Matcha Latte",price:2.5,img:"images/colddrink/iced_matcha_latte.jpeg"},
+      {name:"Iced Mocha Latte",price:2.5,img:"images/colddrink/iced_mocha_latte.jpeg"},
+      {name:"Iced Shaken Caramel",price:2.5,img:"images/colddrink/iced_shaken_caramel.jpeg"},
+      {name:"Iced Shaken Cookie",price:2.5,img:"images/colddrink/iced_shaken_cookie.jpeg"},
+      {name:"Iced Shaken Mocha",price:2.5,img:"images/colddrink/iced_shaken_mocha.jpeg"},
+      {name:"Iced Shaken Spanish",price:2.5,img:"images/colddrink/iced_shaken_spanish.jpeg"},
+      {name:"Iced Spanish Latte",price:2.5,img:"images/colddrink/iced_spanish_latte.jpeg"},
+    ]
+  },
+  {
+    id: "crepe", label: "Crepe & Waffle", icon: "🧇", group: "desserts",
+    products: [
+      {name:"Bubble Cheese Odkac",price:5.0,img:"images/crepe/bubble_cheese_odkac.jpeg"},
+      {name:"Bubble Honey Cheese",price:3.0,img:"images/crepe/bubble_honey_cheese.jpeg"},
+      {name:"Bubble Honey Odkac",price:5.5,img:"images/crepe/bubble_honey_odkac.jpeg"},
+      {name:"Bubble Lotus",price:3.0,img:"images/crepe/bubble_lotus.jpeg"},
+      {name:"Crepe Dubai",price:4.0,img:"images/crepe/crepe_dubai.jpeg"},
+      {name:"Crepe Dubai Pistachio",price:5.0,img:"images/crepe/crepe_dubai_pistachio.jpeg"},
+      {name:"Crepe Mix",price:3.0,img:"images/crepe/crepe_mix.jpeg"},
+      {name:"Ice Bubble Nutella",price:3.0,img:"images/crepe/ice_bubble_nutella.jpeg"},
+      {name:"Ice Crepe Lotus",price:3.0,img:"images/crepe/ice_crepe_lotus.jpeg"},
+      {name:"Ice Crepe Nutella",price:4.5,img:"images/crepe/ice_crepe_nutella.jpeg"},
+      {name:"Pancake Honey Cheese",price:3.0,img:"images/crepe/pancake_honey_cheese.jpeg"},
+      {name:"Pancake Nutella",price:3.0,img:"images/crepe/pancake_nutella.jpeg"},
+    ]
+  },
+  {
+    id: "cake", label: "Dessert & Cake", icon: "🎂", group: "desserts",
+    products: [
+      {name:"Banana Cake",price:1.5,img:"images/cake/banana_cake.jpeg"},
+      {name:"Basbuuusa",price:1.0,img:"images/cake/basbuuusa.jpeg"},
+      {name:"Caramel Cake",price:3.0,img:"images/cake/caramel_cake.jpeg"},
+      {name:"Carrot Cake",price:2.0,img:"images/cake/carrot_cake.jpeg"},
+      {name:"Chocolate Cake",price:3.0,img:"images/cake/chocolate_cake.jpeg"},
+      {name:"Cinnamon Roll",price:2.0,img:"images/cake/cinnamon_roll.jpeg"},
+      {name:"Classic Caramel Cake",price:3.0,img:"images/cake/classic_caramel_cake.jpeg"},
+      {name:"Cup Cakes",price:1.5,img:"images/cake/cup_cakes.jpeg"},
+      {name:"Donut",price:1.0,img:"images/cake/donut.jpeg"},
+      {name:"Donuts Cake",price:1.25,img:"images/cake/donuts_cake.jpeg"},
+      {name:"Healthy bite",price:1.5,img:"images/cake/healthy_bite.jpeg"},
+      {name:"Lebaniyad",price:2.0,img:"images/cake/lebaniyad.jpeg"},
+      {name:"Lotus Cake",price:3.0,img:"images/cake/lotus_cake.jpeg"},
+      {name:"Oreo Cake",price:3.0,img:"images/cake/oreo_cake.jpeg"},
+      {name:"Redvelvet Cake",price:3.0,img:"images/cake/redvelvet_cake.jpeg"},
+      {name:"Rice Pudding",price:2.0,img:"images/cake/rice_pudding.jpeg"},
+      {name:"Strawberry Cake",price:3.0,img:"images/cake/strawberry_cake.jpeg"},
+      {name:"Vanila Cake",price:3.0,img:"images/cake/vanila_cake.jpeg"},
+      {name:"White Cake",price:3.0,img:"images/cake/white_cake.jpeg"},
+      {name:"ginger cookies",price:0.16,img:"images/cake/ginger_cookies.jpeg"},
+    ]
+  },
+  {
+    id: "dessertcup", label: "Dessert Cup", icon: "🍮", group: "desserts",
+    products: [
+      {name:"Caramel Cheese Cake",price:2.5,img:"images/dessertcup/caramel_cheese_cake.jpeg"},
+      {name:"Cheese Cake",price:2.5,img:"images/dessertcup/cheese_cake.jpeg"},
+      {name:"Lotus Cheese Cake",price:2.5,img:"images/dessertcup/lotus_cheese_cake.jpeg"},
+      {name:"Oreo Cheese Cake",price:3.0,img:"images/dessertcup/oreo_cheese_cake.jpeg"},
+      {name:"Strawberry Cheese Cake",price:2.5,img:"images/dessertcup/strawberry_cheese_cake.jpeg"},
+      {name:"Strawberry Kunafah",price:6.0,img:"images/dessertcup/strawberry_kunafah.jpeg"},
+      {name:"Tirammiso",price:3.0,img:"images/dessertcup/tirammiso.jpeg"},
+    ]
+  },
+  {
+    id: "breakfast", label: "Breakfast", icon: "🍳", group: "food",
+    products: [
+      {name:"Beer",price:4.0,img:"images/breakfast/beer.jpeg"},
+      {name:"Boorash",price:1.5,img:"images/breakfast/boorash.jpeg"},
+      {name:"Boul Egg",price:0.3,img:"images/breakfast/boul_egg.jpeg"},
+      {name:"Canjeero",price:0.3,img:"images/breakfast/canjeero.jpeg"},
+      {name:"Canjeero Qamadi",price:0.5,img:"images/breakfast/canjeero_qamadi.jpeg"},
+      {name:"Canjeero iyo Maraq",price:2.0,img:"images/breakfast/canjeero_iyo_maraq.jpeg"},
+      {name:"Faasuliya",price:2.5,img:"images/breakfast/faasuliya.jpeg"},
+      {name:"Fresh Tomato Sauce (Dalacbilaash)",price:2.0,img:"images/breakfast/fresh_tomato_sauce_dalacbilaash.jpeg"},
+      {name:"Fuul",price:2.5,img:"images/breakfast/fuul.jpeg"},
+      {name:"Isbeeso Ari",price:4.0,img:"images/breakfast/isbeeso_ari.jpeg"},
+      {name:"Killi",price:4.0,img:"images/breakfast/killi.jpg"},
+      {name:"Koosto",price:1.5,img:"images/breakfast/koosto.jpg"},
+      {name:"Malab",price:0.3,img:"images/breakfast/malab.jpeg"},
+      {name:"Manara Breakfast",price:8.0,img:"images/breakfast/manara_breakfast.webp"},
+      {name:"Mixed Breakfast (Killi & Beer)",price:4.0,img:"images/breakfast/mixed_breakfast_killi_and_beer.jpeg"},
+      {name:"Odkac",price:3.0,img:"images/breakfast/odkac.jpeg"},
+      {name:"Omlet Egg",price:3.5,img:"images/breakfast/omlet_egg.jpeg"},
+      {name:"Rooti",price:0.25,img:"images/breakfast/rooti.jpeg"},
+      {name:"Shakshuka Egg",price:3.5,img:"images/breakfast/shakshuka_egg.jpeg"},
+      {name:"Suqaar",price:4.0,img:"images/breakfast/suqaar.jpeg"},
+    ]
+  },
+  {
+    id: "sheetar", label: "Sheetar", icon: "🥐", group: "food",
+    products: [
+      {name:"Bur",price:0.3,img:"images/sheetar/bur.jpeg"},
+      {name:"Bur kuuskuus",price:0.75,img:"images/sheetar/bur_kuuskuus.jpeg"},
+      {name:"Donat",price:0.75,img:"images/sheetar/donat.jpeg"},
+      {name:"Kabaab",price:0.3,img:"images/sheetar/kabaab.jpeg"},
+      {name:"Sambuus Fish",price:0.3,img:"images/sheetar/sambuus_fish.jpeg"},
+      {name:"Sambuus Meat",price:0.5,img:"images/sheetar/sambuus_meat.jpeg"},
+    ]
+  },
+  {
+    id: "drinkvip", label: "Fresh Juices", icon: "🥭", group: "beverages",
+    products: [
+      {name:"Avocado",price:2.0,img:"images/drinkvip/avocado.jpeg"},
+      {name:"Babay",price:1.0,img:"images/drinkvip/babay.jpeg"},
+      {name:"Babay Mashadoonyo",price:1.5,img:"images/drinkvip/babay_mashadoonyo.jpeg"},
+      {name:"Baytraaf",price:1.5,img:"images/drinkvip/baytraaf.jpeg"},
+      {name:"Caana loose",price:1.5,img:"images/drinkvip/caana_loose.jpeg"},
+      {name:"Cocktail",price:1.5,img:"images/drinkvip/cocktail.jpeg"},
+      {name:"Feeto qare",price:2.0,img:"images/drinkvip/feeto_qare.jpeg"},
+      {name:"Furulaato",price:2.0,img:"images/drinkvip/furulaato.jpeg"},
+      {name:"Garaafo Isbaandhees",price:5.0,img:"images/drinkvip/garaafo_isbaandhees.jpeg"},
+      {name:"Garaafo Isbarmuuto",price:6.0,img:"images/drinkvip/garaafo_isbarmuuto.jpeg"},
+      {name:"Garaafo Qare",price:5.0,img:"images/drinkvip/garaafo_qare.jpeg"},
+      {name:"Garaafo maango",price:6.0,img:"images/drinkvip/garaafo_maango.jpeg"},
+      {name:"Isbaandhees",price:1.5,img:"images/drinkvip/isbaandhees.jpeg"},
+      {name:"Isbarmooto",price:1.5,img:"images/drinkvip/isbarmooto.jpeg"},
+      {name:"Lemon",price:1.25,img:"images/drinkvip/lemon.jpeg"},
+      {name:"Mango",price:2.0,img:"images/drinkvip/mango.jpeg"},
+      {name:"Mixed Fruit",price:3.0,img:"images/drinkvip/mixed_fruit.jpeg"},
+      {name:"Orange",price:1.5,img:"images/drinkvip/orange.jpeg"},
+      {name:"Watermelon",price:1.5,img:"images/drinkvip/watermelon.jpeg"},
+    ]
+  },
+  {
+    id: "sides", label: "Side Dishes", icon: "🍟", group: "food",
+    products: [
+      {name:"Ceesh - jabaati",price:0.5,img:"images/sides/ceesh___jabaati.jpeg"},
+      {name:"Chips Masala",price:3.0,img:"images/sides/chips_masala.jpeg"},
+      {name:"Daango",price:1.5,img:"images/sides/daango.jpeg"},
+      {name:"Fried Chips",price:2.0,img:"images/sides/fried_chips.jpeg"},
+      {name:"Malawax",price:0.5,img:"images/sides/malawax.jpeg"},
+    ]
+  },
+  {
+    id: "meat", label: "Meat", icon: "🥩", group: "food",
+    products: [
+      {name:"Beef Steak",price:7.0,img:"images/meat/beef_steak.jpeg"},
+      {name:"Beef Steak Mash Potatoes",price:8.5,img:"images/meat/beef_steak_mash_potatoes.jpeg"},
+      {name:"Camel Meat Boiled 0.5kg",price:6.5,img:"images/meat/camel_meat_boiled_05kg.jpeg"},
+      {name:"Camel Meat Boiled 1kg",price:10.5,img:"images/meat/camel_meat_boiled_1kg.jpeg"},
+      {name:"Camel Rose",price:7.0,img:"images/meat/camel_rose.jpeg"},
+      {name:"Chinese Steak",price:6.5,img:"images/meat/chinese_steak.jpeg"},
+      {name:"Cream Beef Steak Mushroom Sause",price:8.0,img:"images/meat/cream_beef_steak_mushroom_sause.jpeg"},
+      {name:"Dhaylo Ari",price:8.5,img:"images/meat/dhaylo_ari.jpeg"},
+      {name:"Ido Alforno",price:9.0,img:"images/meat/ido_alforno.jpeg"},
+      {name:"Koostaato",price:6.0,img:"images/meat/koostaato.jpeg"},
+      {name:"MANARA Meat",price:6.0,img:"images/meat/manara_meat.jpeg"},
+      {name:"MANARA Peef Steak Mashruum",price:7.0,img:"images/meat/manara_peef_steak_mashruum.jpeg"},
+      {name:"Meat Curry",price:6.0,img:"images/meat/meat_curry.jpeg"},
+      {name:"Meat Shuwarma",price:4.0,img:"images/meat/meat_shuwarma.jpeg"},
+      {name:"Moskula",price:3.5,img:"images/meat/moskula.jpeg"},
+      {name:"Mushroom Beef Steak",price:7.0,img:"images/meat/mushroom_beef_steak.jpeg"},
+      {name:"Mushroom Potatoes",price:7.0,img:"images/meat/mushroom_potatoes.jpeg"},
+      {name:"Roasted Goat Meat",price:7.0,img:"images/meat/roasted_goat_meat.jpeg"},
+      {name:"kalaankal",price:4.0,img:"images/meat/kalaankal.jpeg"},
+    ]
+  },
+  {
+    id: "fish", label: "Fish", icon: "🐟", group: "food",
+    products: [
+      {name:"Cocunut Fish",price:5.0,img:"images/fish/cocunut_fish.jpeg"},
+      {name:"Cutulati Fish",price:3.0,img:"images/fish/cutulati_fish.jpeg"},
+      {name:"Finger Fish",price:5.0,img:"images/fish/finger_fish.jpeg"},
+      {name:"Firito Fish",price:6.0,img:"images/fish/firito_fish.jpeg"},
+      {name:"Fish Curry",price:5.0,img:"images/fish/fish_curry.jpeg"},
+      {name:"Fish Shuwarma",price:3.0,img:"images/fish/fish_shuwarma.jpeg"},
+      {name:"Fish Suqaar",price:3.5,img:"images/fish/fish_suqaar.jpeg"},
+      {name:"Grilled Fish",price:5.0,img:"images/fish/grilled_fish.jpeg"},
+      {name:"Masala Fish",price:5.0,img:"images/fish/masala_fish.jpeg"},
+      {name:"Salat Fish",price:3.0,img:"images/fish/salat_fish.jpeg"},
+      {name:"Salmon Fish",price:14.0,img:"images/fish/salmon_fish.jpeg"},
+      {name:"Sandwich",price:3.0,img:"images/fish/sandwich.jpeg"},
+      {name:"Scallop Fish",price:5.0,img:"images/fish/scallop_fish.jpeg"},
+      {name:"Shrimp Curry",price:14.0,img:"images/fish/shrimp_curry.jpeg"},
+    ]
+  },
+  {
+    id: "chicken", label: "Chicken", icon: "🍗", group: "food",
+    products: [
+      {name:"Baroosto",price:1.5,img:"images/chicken/baroosto.jpeg"},
+      {name:"Chicken Chinese",price:5.0,img:"images/chicken/chicken_chinese.jpeg"},
+      {name:"Chicken Curry",price:6.0,img:"images/chicken/chicken_curry.jpeg"},
+      {name:"Chicken Cutulati",price:6.0,img:"images/chicken/chicken_cutulati.jpeg"},
+      {name:"Chicken Finger",price:5.0,img:"images/chicken/chicken_finger.jpeg"},
+      {name:"Chicken Full",price:8.0,img:"images/chicken/chicken_full.jpeg"},
+      {name:"Chicken Half",price:4.0,img:"images/chicken/chicken_half.jpeg"},
+      {name:"Chicken Legs (2 lug)",price:3.0,img:"images/chicken/chicken_legs_2_lug.jpeg"},
+      {name:"Chicken Masala",price:8.0,img:"images/chicken/chicken_masala.jpeg"},
+      {name:"Chicken Rubac",price:2.0,img:"images/chicken/chicken_rubac.jpeg"},
+      {name:"Chicken Salad",price:5.0,img:"images/chicken/chicken_salad.jpeg"},
+      {name:"Chicken Sandwich",price:4.0,img:"images/chicken/chicken_sandwich.jpeg"},
+      {name:"Chicken Shuwarma",price:3.0,img:"images/chicken/chicken_shuwarma.jpeg"},
+      {name:"Chicken Steak",price:7.0,img:"images/chicken/chicken_steak.jpeg"},
+      {name:"Chicken Suqaar",price:3.5,img:"images/chicken/chicken_suqaar.jpeg"},
+      {name:"Chicken Wings",price:5.0,img:"images/chicken/chicken_wings.jpeg"},
+      {name:"MANARA Roll Chicken Rice",price:10.0,img:"images/chicken/manara_roll_chicken_rice.jpeg"},
+    ]
+  },
+  {
+    id: "rice", label: "Rice", icon: "🍚", group: "food",
+    products: [
+      {name:"Carrot Rice",price:2.5,img:"images/rice/carrot_rice.jpeg"},
+      {name:"Egg Fry Rice",price:3.0,img:"images/rice/egg_fry_rice.jpeg"},
+      {name:"Fadareeshan",price:1.5,img:"images/rice/fadareeshan.jpeg"},
+      {name:"Green Rice",price:2.0,img:"images/rice/green_rice.jpeg"},
+      {name:"Qamadi Saldato",price:2.0,img:"images/rice/qamadi_saldato.jpeg"},
+      {name:"Rice Saldaato",price:2.0,img:"images/rice/rice_saldaato.jpeg"},
+      {name:"White Rice",price:1.5,img:"images/rice/white_rice.jpeg"},
+    ]
+  },
+  {
+    id: "pasta", label: "Pasta", icon: "🍝", group: "food",
+    products: [
+      {name:"Alfareado Chicken",price:6.5,img:"images/pasta/alfareado_chicken.jpeg"},
+      {name:"Alfredo",price:4.0,img:"images/pasta/alfredo.jpeg"},
+      {name:"Fino Saldato",price:2.0,img:"images/pasta/fino_saldato.jpeg"},
+      {name:"Lasagna Pasta",price:7.0,img:"images/pasta/lasagna_pasta.jpeg"},
+      {name:"MANARA Special Lunch",price:10.0,img:"images/pasta/manara_special_lunch.jpeg"},
+      {name:"Macaron Alfoorno With Chicken",price:6.5,img:"images/pasta/macaron_alfoorno_with_chicken.jpeg"},
+      {name:"Pasta",price:1.0,img:"images/pasta/pasta.jpeg"},
+      {name:"Talteli Saldaato",price:2.0,img:"images/pasta/talteli_saldaato.jpeg"},
+    ]
+  },
+  {
+    id: "burger", label: "Burgers", icon: "🍔", group: "food",
+    products: [
+      {name:"Beef Burger",price:3.5,img:"images/burger/beef_burger.jpeg"},
+      {name:"Chicken Burger",price:3.5,img:"images/burger/chicken_burger.jpeg"},
+      {name:"Fish Burger",price:3.5,img:"images/burger/fish_burger.jpeg"},
+    ]
+  },
+  {
+    id: "pizza", label: "Pizza", icon: "🍕", group: "food",
+    products: [
+      {name:"Chicken Pizza Large",price:12.0,img:"images/pizza/chicken_pizza_large.jpeg"},
+      {name:"Chicken Pizza Mediam",price:10.0,img:"images/pizza/chicken_pizza_mediam.jpeg"},
+      {name:"Chicken Pizza Small",price:7.0,img:"images/pizza/chicken_pizza_small.jpeg"},
+      {name:"Fish Pizza Large",price:12.0,img:"images/pizza/fish_pizza_large.jpeg"},
+      {name:"Fish Pizza Mediam",price:10.0,img:"images/pizza/fish_pizza_mediam.jpeg"},
+      {name:"Fish Pizza Small",price:7.0,img:"images/pizza/fish_pizza_small.jpeg"},
+      {name:"Magarita Pizza Large",price:12.0,img:"images/pizza/magarita_pizza_large.jpeg"},
+      {name:"Magarita Pizza Mediam",price:10.0,img:"images/pizza/magarita_pizza_mediam.jpeg"},
+      {name:"Magarita Pizza Small",price:7.0,img:"images/pizza/magarita_pizza_small.jpeg"},
+      {name:"Meat Pizza Large",price:12.0,img:"images/pizza/meat_pizza_large.jpeg"},
+      {name:"Meat Pizza Mediam",price:10.0,img:"images/pizza/meat_pizza_mediam.jpeg"},
+      {name:"Meat Pizza Small",price:7.0,img:"images/pizza/meat_pizza_small.jpeg"},
+    ]
+  },
+  {
+    id: "shakesvip", label: "Restaurant Shakes", icon: "🥤", group: "beverages",
+    products: [
+      {name:"Avocado Shake",price:2.5,img:"images/shakesvip/avocado_shake.jpeg"},
+      {name:"Banaana Shake",price:2.5,img:"images/shakesvip/banaana_shake.jpeg"},
+      {name:"Caano Geel",price:2.0,img:"images/shakesvip/caano_geel.jpeg"},
+      {name:"Caano Koosto",price:1.5,img:"images/shakesvip/caano_koosto.jpeg"},
+      {name:"Mango Shake",price:2.5,img:"images/shakesvip/mango_shake.jpeg"},
+      {name:"Milk Shake",price:2.5,img:"images/shakesvip/milk_shake.jpeg"},
+    ]
+  },
+  {
+    id: "soup", label: "Soup", icon: "🍲", group: "food",
+    products: [
+      {name:"Chicken Soup",price:2.0,img:"images/soup/chicken_soup.jpeg"},
+      {name:"Fish Soup",price:2.0,img:"images/soup/fish_soup.jpeg"},
+      {name:"Lender",price:2.0,img:"images/soup/lender.jpeg"},
+      {name:"Soup",price:2.0,img:"images/soup/soup.jpeg"},
+      {name:"Tomato Soup",price:2.0,img:"images/soup/tomato_soup.jpeg"},
+    ]
+  },
+  {
+    id: "salad", label: "Salads", icon: "🥗", group: "food",
+    products: [
+      {name:"Chicken Salad",price:4.5,img:"images/salad/chicken_salad.jpeg"},
+      {name:"Fish Salad",price:4.5,img:"images/salad/fish_salad.jpeg"},
+      {name:"Salad",price:2.5,img:"images/salad/salad.jpeg"},
+    ]
+  },
+];
+
+let currentFilter = 'all';
+
+function buildCatNav() {
+  const nav = document.getElementById('catNav');
+  menuData.forEach(cat => {
+    const btn = document.createElement('button');
+    btn.className = 'cat-pill';
+    btn.setAttribute('data-group', cat.group);
+    btn.innerHTML = `<span class="icon">${cat.icon}</span> ${cat.label}`;
+    btn.onclick = () => {
+      document.getElementById('sec-' + cat.id).scrollIntoView({behavior:'smooth', block:'start'});
+    };
+    nav.appendChild(btn);
+  });
+}
+
+function buildMenu() {
+  const container = document.getElementById('menuSections');
+  menuData.forEach(cat => {
+    const sec = document.createElement('section');
+    sec.className = 'menu-section';
+    sec.id = 'sec-' + cat.id;
+    sec.setAttribute('data-group', cat.group);
+
+    const count = cat.products.length;
+    sec.innerHTML = `
+      <div class="section-header">
+        <div class="section-icon">${cat.icon}</div>
+        <div class="section-title-wrap">
+          <div class="section-title">${cat.label}</div>
+          <div class="section-count">${count} item${count !== 1 ? 's' : ''}</div>
+        </div>
+        <div class="section-line"></div>
+      </div>
+      <div class="product-grid" id="grid-${cat.id}">
+        ${cat.products.map(p => productCard(p, cat.id)).join('')}
+      </div>
+    `;
+    container.appendChild(sec);
+  });
+}
+
+function productCard(p, catId) {
+  const localImg = p.img || '';
+
+  return `
+    <div class="product-card" data-name="${p.name.toLowerCase()}">
+      <div class="product-img">
+        <img
+          src="${localImg}"
+          alt="${p.name}"
+          loading="lazy"
+          onerror="this.style.display='none';this.parentElement.classList.add('no-img')"
+        >
+        <div class="img-placeholder">🍽️</div>
+      </div>
+
+      <div class="product-body">
+        <div class="product-name">${p.name}</div>
+
+        <div class="product-footer">
+          <div class="product-price">
+            $${p.price.toFixed(2)}
+            <span>USD</span>
+          </div>
+
+          <a href="https://wa.me/252613599469" target="_blank" class="add-btn">+</a>
+        </div>
+      </div>
+    </div>
+  `;
+}
+
+function doSearch() {
+  const q = document.getElementById('searchInput').value.toLowerCase().trim();
+  let total = 0;
+
+  menuData.forEach(cat => {
+    const sec = document.getElementById('sec-' + cat.id);
+    if (!sec) return;
+
+    const groupOk = currentFilter === 'all' || cat.group === currentFilter;
+    if (!groupOk) { sec.classList.add('hidden'); return; }
+
+    const cards = sec.querySelectorAll('.product-card');
+    let visible = 0;
+    cards.forEach(card => {
+      const name = card.getAttribute('data-name') || '';
+      const match = !q || name.includes(q) || cat.label.toLowerCase().includes(q);
+      card.classList.toggle('hidden', !match);
+      if (match) visible++;
+    });
+
+    sec.classList.toggle('hidden', visible === 0);
+    total += visible;
+  });
+
+  const countEl = document.getElementById('search-count');
+  if (q || currentFilter !== 'all') {
+    countEl.textContent = `${total} item${total !== 1 ? 's' : ''} found`;
+  } else {
+    countEl.textContent = '';
+  }
+
+  document.getElementById('noResults').classList.toggle('show', total === 0);
+}
+
+function filterGroup(btn, group) {
+  currentFilter = group;
+  document.querySelectorAll('.chip').forEach(c => c.classList.remove('active'));
+  btn.classList.add('active');
+  doSearch();
+}
+
+function focusSearch() {
+  const el = document.getElementById('searchInput');
+  el.focus();
+  el.scrollIntoView({behavior:'smooth', block:'center'});
+}
+
+function toggleMobileNav() {
+  const nav = document.getElementById('mobileNav');
+  nav.style.display = nav.style.display === 'flex' ? 'none' : 'flex';
+}
+
+buildCatNav();
+buildMenu();
+doSearch();
+
+// Anchor shortcuts
+document.addEventListener('DOMContentLoaded', () => {
+  const a = document.querySelector('a[href="#beverages"]');
+  if(a) a.href='#sec-soda';
+  const b = document.querySelector('a[href="#food"]');
+  if(b) b.href='#sec-breakfast';
+  const c = document.querySelector('a[href="#desserts"]');
+  if(c) c.href='#sec-crepe';
+});
+</script>
+</body>
+</html>
